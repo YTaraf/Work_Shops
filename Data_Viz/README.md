@@ -27,6 +27,28 @@ By the end of the workshop, attendees will be able to create clear, informative,
 
 ---
 
+## All Work to be Conducted in Google Colab
+
+All work related to this project will be carried out in **[Google Colab](https://colab.google/)**. Google Colab is a free, cloud-based platform that allows you to run Jupyter notebooks with access to GPUs and other powerful tools.
+
+To get started, simply follow these steps:
+1. Go to [Google Colab](https://colab.google/).
+2. Create a new notebook and get coding.
+   
+## Inputting the CSV File into Google Colab
+
+To load the Titanic dataset into Google Colab, follow these steps:
+
+1. **Upload the CSV file**:
+   - In your Colab notebook, use the following code to upload your CSV file:
+     ```python
+     from google.colab import files
+     uploaded = files.upload()
+     ```
+   - This will prompt you to choose a file from your local machine. Select the Titanic dataset `.csv` file.
+
+---
+
 ## Requirements
 
 - **Python 3.x**
@@ -37,3 +59,4 @@ By the end of the workshop, attendees will be able to create clear, informative,
 You can install the necessary libraries with the following commands:
 ```bash
 pip install matplotlib pandas jupyter
+
