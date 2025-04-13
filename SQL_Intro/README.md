@@ -67,7 +67,7 @@ To begin:
 ## Requirements
 
 - A laptop with internet access.
-- A modern web browser (Chrome, Firefox, or Edge recommended).
+- A modern web browser.
 - No prior experience with SQL is required, but familiarity with basic computer operations is helpful.
 
 ---
