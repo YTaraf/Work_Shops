@@ -71,3 +71,11 @@ To begin:
 - No prior experience with SQL is required, but familiarity with basic computer operations is helpful.
 
 ---
+
+## References
+
+- [Lucidchart: ER Diagram Symbols and Meaning](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
+- [SQL Tutorial: Sample Database](https://www.sqltutorial.org/sql-sample-database/)
+
+
+---
