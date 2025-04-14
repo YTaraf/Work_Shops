@@ -21,10 +21,10 @@ By the end of this workshop, you will:
 - Key components: tables, rows, columns, primary keys, and foreign keys.
 - Real-world examples of database use.
 
-### 2. Understanding Entity-Relationship (ER) Diagrams
-- What are ER diagrams?
+### 2. Understanding Database Schema Diagrams
+- What database schema diagrams are.
 - How to read and interpret them.
-- Identifying relationships, cardinality, and constraints.
+- Identifying tables, columns, keys, and relationships.
   
 ### 3. The History and Role of SQL
 - The origins and evolution of SQL.
