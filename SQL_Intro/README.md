@@ -8,7 +8,7 @@ Throughout the workshop, participants will explore key concepts such as database
 
 By the end of this workshop, you will:
 - Understand the core principles of relational databases.
-- Be able to interpret and analyze Entity-Relationship Diagrams (ERDs).
+- Be able to interpret and analyze Database design schemas.
 - Write and execute basic SQL queries.
 - Appreciate the role of databases in real-world applications.
 
