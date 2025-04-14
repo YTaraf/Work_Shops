@@ -28,6 +28,7 @@ ORDER BY salary DESC
 LIMIT 1;
 
 -- 7. Calculate the difference between the highest and lowest salary in the 'employees' table.
+--PRATICE EXAMPLE
 SELECT MAX(salary) - MIN(salary) AS salary_difference
 FROM employees;
 
@@ -60,6 +61,7 @@ GROUP BY employee_id
 HAVING COUNT(*) > 1;
 
 --13. Retrieves the department_id and the average salary for each department for departments that have an average salary greater than 7000.
+--PRATICE EXAMPLE
 SELECT department_id, ROUND(AVG(salary),2) AS average_salary
 FROM employees
 GROUP BY department_id
