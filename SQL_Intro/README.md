@@ -4,7 +4,7 @@
 
 Welcome to the **Introduction to SQL Workshop**! This beginner-friendly session is designed to teach participants the fundamentals of **Relational Databases** and **Structured Query Language (SQL)**. 
 
-Throughout the workshop, participants will explore key concepts such as database structure, Entity-Relationship (ER) modeling, schemas, and how to interact with databases using SQL. We will focus on the **PostgreSQL** flavor of SQL, one of the most powerful and widely-used relational database systems.
+Throughout the workshop, participants will explore key concepts such as database structure, schemas, and how to interact with databases using SQL. We will focus on the **PostgreSQL** flavor of SQL, one of the most powerful and widely-used relational database systems.
 
 By the end of this workshop, you will:
 - Understand the core principles of relational databases.
