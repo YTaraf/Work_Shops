@@ -12,7 +12,7 @@ SELECT COUNT(Job_title)
 FROM jobs;
 
 -- 4. Count the number of different countries in the 'countries' table.
---PRATICE EXAMPLE
+--PRACTICE EXAMPLE
 SELECT COUNT(*)
 FROM countries;
 
@@ -33,7 +33,7 @@ ORDER BY salary DESC
 LIMIT 1;
 
 -- 8. Calculate the difference between the highest and lowest salary in the 'employees' table.
---PRATICE EXAMPLE
+--PRACTICE EXAMPLE
 SELECT MAX(salary) - MIN(salary) AS salary_difference
 FROM employees;
 
@@ -66,7 +66,7 @@ GROUP BY employee_id
 HAVING COUNT(*) > 1;
 
 --14. Retrieves the department_id and the average salary for each department for departments that have an average salary greater than 7000.
---PRATICE EXAMPLE
+--PRACTICE EXAMPLE
 SELECT department_id, ROUND(AVG(salary),2) AS average_salary
 FROM employees
 GROUP BY department_id
