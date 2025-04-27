@@ -54,8 +54,9 @@ data.head()
 ```
 
 ---
-
 ## Requirements
+
+- **Python 3.x**
 
 You’ll need to install/import the following Python libraries:
 
@@ -68,7 +69,22 @@ import seaborn as sns
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
 
-from sklearn.metrics import accuracy_score, precision_score, recall_score, confusion_matrix, classification_report, f1_score
+from sklearn.metrics import (
+    accuracy_score, 
+    precision_score, 
+    recall_score, 
+    confusion_matrix, 
+    classification_report, 
+    f1_score
+)
 ```
+
+You can install the necessary libraries with the following command:
+
+```bash
+pip install numpy pandas matplotlib seaborn scikit-learn
+```
+
+> **Note:** If you are using **Google Colab**, all these libraries are already pre-installed. You can skip the installation step!
 
 ---
