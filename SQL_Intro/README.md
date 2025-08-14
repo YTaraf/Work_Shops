@@ -54,11 +54,11 @@ To begin:
 
 1. On the top left of the [DB Fiddle](https://www.db-fiddle.com/) site, change the SQL flavor from **MySQL** to the most recent version of **PostgreSQL**.
 2. Copy the **database schema** from the GitHub repository:  
-   👉 [HR_Database.sql](https://github.com/YTaraf/Work_Shops/blob/main/SQL_Intro/HR_Database.sql)  
+    [HR_Database.sql](https://github.com/YTaraf/Work_Shops/blob/main/SQL_Intro/HR_Database.sql)  
    Paste it into the "Schema SQL" section on the left-hand side of DB Fiddle.
 3. Run and save the schema code.
 4. Copy the **sample data/values** from the GitHub repository:  
-   👉 [HR_Data_Values.sql](https://github.com/YTaraf/Work_Shops/blob/main/SQL_Intro/HR_Data_Values.sql)  
+    [HR_Data_Values.sql](https://github.com/YTaraf/Work_Shops/blob/main/SQL_Intro/HR_Data_Values.sql)  
    Insert the values *below* the schema code to populate your tables — make sure none of the schema code is lost.
 5. Run and save the data/value code.
 
