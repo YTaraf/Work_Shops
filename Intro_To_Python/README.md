@@ -5,7 +5,7 @@ In this workshop, you'll learn the fundamentals of Python programming — from b
 
 ---
 
-## 📋 Topics Covered
+##  Topics Covered
 
 1. **Basic Data Types**
    - Integers (`int`)
@@ -43,14 +43,14 @@ In this workshop, you'll learn the fundamentals of Python programming — from b
 
 ---
 
-## 🖥️ Workshop Format
+##  Workshop Format
 
 - **Live Coding in Google Colab** — No installation required, just a web browser.
 - **Hands-On Exercises** after each topic.
 
 ---
 
-## 🚀 Getting Started with Google Colab
+##  Getting Started with Google Colab
 
 1. Open **Google Colab**: [https://colab.research.google.com/](https://colab.research.google.com/)
 2. Sign in with your Google account.
@@ -59,7 +59,7 @@ In this workshop, you'll learn the fundamentals of Python programming — from b
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 - A Google account.
 - Internet access.
@@ -67,7 +67,7 @@ In this workshop, you'll learn the fundamentals of Python programming — from b
 
 ---
 
-## ▶️ Running Python Code in Colab
+##  Running Python Code in Colab
 
 - Each code cell can be run independently.
 - You can add new cells with **+ Code**.
@@ -76,7 +76,7 @@ In this workshop, you'll learn the fundamentals of Python programming — from b
 
 ---
 
-## ✨ After the Workshop
+##  After the Workshop
 
 By the end of this workshop, you will:
 - Understand Python’s syntax and data types.
