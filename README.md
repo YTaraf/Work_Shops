@@ -18,7 +18,7 @@ Some of the key topics across the workshops include:
 - **Data Visualization** – Creating and customizing charts using Matplotlib and Seaborn.
 - **Data Wrangling** – Cleaning and manipulating data using Pandas.
 - **Exploratory Data Analysis (EDA)** – Identifying trends and insights in datasets.
-- **Machine Learning ** – Implementing models with Scikit-Learn.
+- **Machine Learning** – Implementing models with Scikit-Learn.
 
 ---
 
