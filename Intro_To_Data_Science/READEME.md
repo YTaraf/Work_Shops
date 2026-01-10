@@ -46,7 +46,7 @@ By the end of this workshop, participants will be able to:
 2. **Clean** – Handle missing values, remove outliers, and correct data types  
 3. **Explore** – Summary statistics, aggregations, and sorting  
 4. **Visualize** – Bar charts, histograms, scatterplots, and pie charts  
-5. **Predict (Optional)** – Apply a simple predictive model  
+5. **Predict** – Apply a simple predictive model  
 6. **Communicate** – Summarize key insights  
 
 ---
