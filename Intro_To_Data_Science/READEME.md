@@ -10,6 +10,24 @@ Participants will learn how to **load, clean, explore, visualize, and perform ba
 
 ---
 
+## Dataset
+
+- **File**: `netflix.csv`  
+- **Description**: Contains data on Netflix titles, including movies and TV shows, their genres, release information, and more.  
+- **Columns**:
+  - `show_id`: Unique identifier for each title  
+  - `type`: Type of content (Movie or TV Show)  
+  - `title`: Name of the movie or TV show  
+  - `director`: Name of the director  
+  - `country`: Country of origin  
+  - `date_added`: Date the title was added to Netflix  
+  - `release_year`: Year the title was released  
+  - `rating`: Content rating (e.g., PG, TV-MA)  
+  - `duration`: Length of the movie or number of seasons for TV shows  
+  - `listed_in`: Genre(s) or categories the title belongs to  
+
+---
+
 ## Workshop Goals
 By the end of this workshop, participants will be able to:
 
@@ -17,7 +35,7 @@ By the end of this workshop, participants will be able to:
 - Clean and filter data for analysis
 - Perform basic exploratory data analysis (EDA) and aggregations
 - Create simple visualizations (bar chart, histogram, scatterplot, pie chart)
-- Understand and apply a basic predictive model (optional)
+- Understand and apply a basic predictive model
 - Summarize key insights and communicate findings
 
 ---
@@ -28,7 +46,7 @@ By the end of this workshop, participants will be able to:
 2. **Clean** – Handle missing values, remove outliers, and correct data types  
 3. **Explore** – Summary statistics, aggregations, and sorting  
 4. **Visualize** – Bar charts, histograms, scatterplots, and pie charts  
-5. **Predict ** – Apply a simple predictive model  
+5. **Predict (Optional)** – Apply a simple predictive model  
 6. **Communicate** – Summarize key insights  
 
 ---
@@ -43,20 +61,14 @@ By the end of this workshop, participants will be able to:
 
 ---
 
-## Requirements
-
-- Python 3.x
-- Libraries:
-  - `pandas`
-  - `numpy`
-  - `matplotlib`
-  - `seaborn`
-  - `statsmodels`
-  - `sklearn`
-  - `statsmodels`
-  - `scipy`
-
-Install the required libraries using:
-
-```bash
-pip install pandas numpy matplotlib seaborn statsmodels sklearn statsmodels scipy
+## Import Libraries
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from statsmodels.formula.api import ols
+from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
+import statsmodels.api as sm
+from scipy import stats
+import io
+from google.colab import files
