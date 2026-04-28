@@ -1,13 +1,15 @@
 # MLDS × AIS Collaboration Workshop  
-## Building a Chatbot with NLP (Beginner-Friendly)
+## Building Interactive Chatbots (Beginner-Friendly)
 
 ---
 
 ## Workshop Goals
-- Understand basic NLP concepts  
+- Understand how chatbots work (from simple to modern AI)
 - Build a rule-based chatbot  
-- Build a retrieval-based chatbot using vector similarity  
-- Get a high-level view of how modern AI chatbots work  
+- Convert text into vectors (TF-IDF)  
+- Build a retrieval-based chatbot using similarity  
+- Explore how real AI chatbots (APIs) work  
+- Collaborate to build creative chatbots  
 
 ---
 
@@ -19,255 +21,150 @@
 
 ---
 
-# Part 1: Conceptual (Slides + Discussion) (30-40 mins)
+# Workshop Structure
 
-## 1. What is NLP? (5–10 min)
+---
+
+# Part 1: Concepts and Intuition (Slides + Live Demos) (20–30 min)
+
+---
+
+## 1. What is NLP? (5 min)
+
 - NLP is about getting computers to work with human language  
-- Common examples:
+- Examples:
   - chatbots  
   - autocomplete  
   - translation  
 
-Show a quick demo comparing a simple chatbot with a more advanced one.
+Quick demo idea:
+- Compare a simple chatbot with a more advanced one  
 
-**Goal:** Give students an intuitive sense of how computers handle language.
-
----
-
-## 2. Text as Data (5–10 min)
-- Raw text is unstructured  
-- Tokenization: breaking a sentence into words  
-- Basic preprocessing:
-  - lowercase  
-  - remove punctuation  
-
-### Example (Python)
-```python
-import string
-
-text = "Hello, how are you?"
-
-text = text.lower()
-text = text.translate(str.maketrans('', '', string.punctuation))
-tokens = text.split()
-
-print(tokens)
-# ['hello', 'how', 'are', 'you']
-```
-Goal: Show that text is treated as data and processed step by step.
-
-
-## 3. Why Rule-Based Systems Break (10–15 min)
-
-- Same meaning can appear in many forms:
-  - “hi”, “hello”, “hey”
-- Number of rules grows quickly
-- Hard to maintain and extend
+Goal: Build intuition
 
 ---
 
-## 4. Turning Text into Numbers (10–15 min)
+## 2. Why Rule-Based Chatbots Break (5 min)
 
-- Bag-of-words idea
-- Count word occurrences
-- Represent sentences as vectors
-- Similar sentences → similar vectors
-
-### Example (Python)
-```python
-    from sklearn.feature_extraction.text import CountVectorizer
-
-    sentences = ["I like cats", "I like dogs"]
-
-    vectorizer = CountVectorizer()
-    vectors = vectorizer.fit_transform(sentences)
-
-    print(vectorizer.get_feature_names_out())
-    print(vectors.toarray())
-```
----
-
-## 5. Types of Chatbots (10 min)
-
-
-## Part 2: Conceptual + Hands-On Coding (Continuation)
-
----
-
-## 3. Why Rule-Based Systems Break (10–15 min)
 - Same meaning can appear in many forms:
   - “hi”, “hello”, “hey”  
-- Number of rules grows quickly  
+- Rules do not scale well  
 - Hard to maintain and extend  
 
----
-
-## 4. Turning Text into Numbers (10–15 min)
-- Bag-of-words idea  
-- Count word occurrences  
-- Represent sentences as vectors  
-- Similar sentences → similar vectors  
-
-### Example (Python)
-```python
-    from sklearn.feature_extraction.text import CountVectorizer
-
-    sentences = ["I like cats", "I like dogs"]
-
-    vectorizer = CountVectorizer()
-    vectors = vectorizer.fit_transform(sentences)
-
-    print(vectorizer.get_feature_names_out())
-    print(vectors.toarray())
-```
+Interactive:
+- Break the Bot Challenge  
+- Students try to confuse the chatbot  
 
 ---
 
-## 5. Types of Chatbots (10 min)
-- Rule-based  
-- Retrieval-based  
-- Generative (modern AI systems)  
+## 3. Words to Vectors (5–7 min)
+
+- Computers require numerical input  
+- Convert text into vectors  
+- Similar sentences produce similar vectors  
+
+Interactive demo:
+- Students act as “dimensions” in a vector  
 
 ---
 
+## 4. Cosine Similarity (3–5 min)
+
+- Measures similarity between vectors  
+- Based on the angle between them  
+
+Key idea:
+- The chatbot finds the most similar sentence  
+
+---
 
 # Part 2: Hands-On Coding
 
-## 1. Chatbot v1: Rule-Based (10–20 min)
-
-### Basic loop
-```python
-    while True:
-        user_input = input("You: ")
-
-        if user_input.lower() == "bye":
-            print("Bot: Goodbye!")
-            break
-```
 ---
 
-### Add rules
-```python
-    if "hello" in user_input:
-        print("Bot: Hi!")
-    elif "how are you" in user_input:
-        print("Bot: I'm doing well!")
-    else:
-        print("Bot: I don't understand.")
-```
+## 1. Chatbot v1: Rule-Based (5–10 min)
+
+Build:
+- Basic loop  
+- Add rules  
+- Add multiple responses  
+
+Interactive:
+- Students suggest responses  
+
 ---
 
-### Improve with multiple responses
-```python
-    import random
+## 2. Transition: Why This Fails (5 min)
 
-    responses = {
-        "hello": ["Hi!", "Hello!", "Hey there!"],
-        "bye": ["Goodbye!", "See you later!"]
-    }
-
-    for key in responses:
-        if key in user_input:
-            print("Bot:", random.choice(responses[key]))
-```
----
-
-## 2. Transition (5–10 min)
 - Test unusual inputs  
-- Show how rule-based systems fail  
-- Motivation for smarter approaches  
+- Observe failure cases  
+
+Prompt:
+- “How can we make this smarter?”  
 
 ---
 
-## 3. Chatbot v2: Retrieval-Based (30–40 min)
+## 3. Chatbot v2: Retrieval-Based (15–20 min)
 
-### Dataset
-```python
-    questions = [
-        "hi",
-        "how are you",
-        "what is your name"
-    ]
-
-    responses = [
-        "Hello!",
-        "I'm good!",
-        "I'm a chatbot"
-    ]
-```
+Steps:
+1. Create dataset  
+2. Convert text to vectors (TF-IDF)  
+3. Compare using cosine similarity  
+4. Return the best match  
 
 ---
 
-### Vectorization
-```python
-    from sklearn.feature_extraction.text import TfidfVectorizer
+### Interactive Moments
 
-    vectorizer = TfidfVectorizer()
-    X = vectorizer.fit_transform(questions)
-```
----
+- Guess the Bot  
+  - Predict the response before running  
 
-### Matching logic
-```Python
-    from sklearn.metrics.pairwise import cosine_similarity
-
-    user_input = input("You: ")
-    user_vec = vectorizer.transform([user_input])
-
-    similarities = cosine_similarity(user_vec, X)
-    best_match_index = similarities.argmax()
-
-    print("Bot:", responses[best_match_index])
-```
----
-
-### Full chatbot loop
-```python
-    while True:
-        user_input = input("You: ")
-
-        if user_input.lower() == "bye":
-            print("Bot: Goodbye!")
-            break
-
-        user_vec = vectorizer.transform([user_input])
-        similarities = cosine_similarity(user_vec, X)
-        best_match_index = similarities.argmax()
-
-        print("Bot:", responses[best_match_index])
-```
----
-
-## 4. Mini Project (30–40 min)
-
-Students build their own chatbot.
-
-### Ideas
-- College FAQ bot  
-- Course assistant  
-- Simple support bot  
-- Game NPC  
+- Confidence Threshold Demo  
+  - Change threshold (e.g., 0.2 to 0.5)  
 
 ---
 
-## 5. Wrap-Up (10–15 min)
+## 4. Live Dataset Builder (10 min)
 
-### Key Takeaways
-- Rule-based systems are simple but limited  
-- Retrieval-based methods improve flexibility  
-- Modern AI systems build on these ideas  
+Students add their own question-response pairs  
+
+Key idea:
+- Students are creating the chatbot’s knowledge  
+
+---
+
+# Part 3: From Simple Bots to Real AI
 
 ---
 
-## Final Note
-The workshop should feel like a progression:
-- simple and intuitive  
-- then clearly limited  
-- then improved with a better approach  
+## 5. Your Bot vs Modern AI (3–5 min)
 
+| Your Chatbot | Modern AI |
+|--------------|----------|
+| TF-IDF vectors | Embeddings |
+| Cosine similarity | Deep learning |
+| Picks best answer | Generates text |
+| Small dataset | Large-scale training data |
 
-- Rule-based  
-- Retrieval-based  
-- Generative (modern AI systems)
+Modern systems such as :contentReference[oaicite:0]{index=0} generate responses rather than selecting them.
 
 ---
+
+## 6. Make It Smarter (Interactive) (5–10 min)
+
+Prompt:
+- “What would improve this chatbot?”
+
+Guide responses into:
+- Memory  
+- Better understanding  
+- Personality  
+- Learning over time  
+- Context awareness  
+
+---
+
+## 7. API Chatbots (Real-World) (5 min)
+
+- Use APIs to access powerful AI models  
+- Send input and receive generated responses  
