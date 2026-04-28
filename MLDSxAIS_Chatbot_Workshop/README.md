@@ -19,9 +19,9 @@
 
 ---
 
-# Part 1: Conceptual (Slides + Discussion)
+# Part 1: Conceptual (Slides + Discussion) (30-40 mins)
 
-## 1. What is NLP? (10–15 min)
+## 1. What is NLP? (5–10 min)
 - NLP is about getting computers to work with human language  
 - Common examples:
   - chatbots  
@@ -34,7 +34,7 @@ Show a quick demo comparing a simple chatbot with a more advanced one.
 
 ---
 
-## 2. Text as Data (15–20 min)
+## 2. Text as Data (5–10 min)
 - Raw text is unstructured  
 - Tokenization: breaking a sentence into words  
 - Basic preprocessing:
@@ -66,7 +66,7 @@ Goal: Show that text is treated as data and processed step by step.
 
 ---
 
-## 4. Turning Text into Numbers (20–25 min)
+## 4. Turning Text into Numbers (10–15 min)
 
 - Bag-of-words idea
 - Count word occurrences
@@ -102,7 +102,7 @@ Goal: Show that text is treated as data and processed step by step.
 
 ---
 
-## 4. Turning Text into Numbers (20–25 min)
+## 4. Turning Text into Numbers (10–15 min)
 - Bag-of-words idea  
 - Count word occurrences  
 - Represent sentences as vectors  
@@ -133,7 +133,7 @@ Goal: Show that text is treated as data and processed step by step.
 
 # Part 2: Hands-On Coding
 
-## 1. Chatbot v1: Rule-Based (45–60 min)
+## 1. Chatbot v1: Rule-Based (10–20 min)
 
 ### Basic loop
 ```python
@@ -179,7 +179,7 @@ Goal: Show that text is treated as data and processed step by step.
 
 ---
 
-## 3. Chatbot v2: Retrieval-Based (60–75 min)
+## 3. Chatbot v2: Retrieval-Based (30–40 min)
 
 ### Dataset
 ```python
@@ -238,7 +238,7 @@ Goal: Show that text is treated as data and processed step by step.
 ```
 ---
 
-## 4. Mini Project (30–60 min)
+## 4. Mini Project (30–40 min)
 
 Students build their own chatbot.
 
