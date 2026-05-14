@@ -1,4 +1,4 @@
-# Machine Learning and Data Science(MLDS) Club Workshops
+# Machine Learning and Data Science Workshops
 
 ## Overview
 
